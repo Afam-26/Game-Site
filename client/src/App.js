@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Nav from "./Pages/Nav"
+import { BrowserRouter, Route} from "react-router-dom"
+import Nav from './components/Nav/nav'
+
 
 
 function App() {
@@ -9,12 +9,12 @@ function App() {
 
     <BrowserRouter>
       <div>
-        <Switch>
+  
           <Route exact path="/Nav">
             <Nav />
           </Route>
 
-        </Switch>
+       
       </div> 
 
       
