@@ -1,0 +1,48 @@
+#contactMe{
+    /* background-image: url("../../assets/images/pexels-ksenia-chernaya-5691695.jpg"); */
+    background-color: #f4f3ed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.contactMeCardContainer{
+    background-color: #c1c1c1 !important;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-family: 'Viaoda Libre', cursive;
+    
+    /* border-radius: 25px; */
+    /* box-shadow: 4px 4px black; */
+}
+
+.contactMeCard{
+    text-align: center;
+}
+
+.contactMeCard h1{
+    color: black;
+}
+
+input{
+    border-radius: 25px;
+}
+
+textarea {
+    border-radius: 25px;
+}
+
+.formSubmit{
+    background-color: black !important;
+    /* border-color: #C3A9EF !important; */
+}
+
+/* .formSubmit:hover{
+    background-color: black !important;
+    border-color: #C3A9EF !important;
+} */
+
+form label{
+    font-size: 1.5rem;
+    color: black;    
+}
