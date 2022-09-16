@@ -5,8 +5,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/home';
 import Donate from './pages/Donate/donate';
-// import AboutMe from "./pages/AboutMe/AboutMe";
-// import Projects from "./pages/Projects/Projects";
+import Wheels from "./pages/Wheels/MegaMillions/megaMillions";
+import HowItWork from "./pages/HowItWork/howItWork";
 import Contact from "./pages/Contact/Contact";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/donate" element={<Donate />} />
-        {/* <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />      */}
+        <Route path="/wheels" element={<Wheels />} />
+        <Route path="/howItWork" element={<HowItWork />} />     
         <Route path="/contact" element={<Contact />} />
         
       </Routes>
