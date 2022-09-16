@@ -1,58 +1,30 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes,} from "react-router-dom";
+import React from "react";
+// import { Container } from "@material-ui/core";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav/nav';
+import NavBar from './components/NavBar/NavBar';
 import Home from './pages/Home/home';
-// import How_it_work from './pages/Home/how_it_work';
-// import Wheel from './pages/Home/wheel';
-// import Donate from './pages/Home/donate';
-import Contact from './pages/Contact/contact';
-
-
+// import Main from './pages/Main/Main';
+// import AboutMe from "./pages/AboutMe/AboutMe";
+// import Projects from "./pages/Projects/Projects";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
-  return (
+  return (    
 
     <BrowserRouter>
-      <Nav />
-          <Routes>
-          <Route exact path="/home" element ={<Home/>}></Route>
-          {/* <Route exact path="/how_it_work" component ={How_it_work}></Route>
-          <Route exact path="/wheel" component ={Wheel}></Route>
-          <Route exact path="/donate" component ={Donate}></Route> */}
-          <Route exact path="/contact" element ={<Contact/>}></Route>          
-          
-          </Routes>
-       
+      <NavBar />
+      <Routes>
+      <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Main />} /> */}
+        {/* <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />      */}
+        <Route path="/contact" element={<Contact />} />
         
+      </Routes>
     </BrowserRouter>
 
-
-
-
-
-
-
-
-
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+   );
 }
 
 export default App;
